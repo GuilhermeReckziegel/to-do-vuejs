@@ -47,7 +47,7 @@ export default {
     removeTodo(todo) {
       const index = this.todos.findIndex(item => item.id === todo.id)
       if(index > -1) {
-        this.$delete(this.todos, index);
+        this.todos.splice(index, 1);
       }
     }
 
