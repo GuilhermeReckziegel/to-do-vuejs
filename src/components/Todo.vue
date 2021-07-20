@@ -1,7 +1,7 @@
 <template>
     <div class="tile flex-centered" :class="{checked: todo.checked}">
         <div class="tile-icon">
-            <i class="icon" :class="todo.checked ? 'icon-checked' : 'icon-time'"></i>
+            <i class="icon" :class="todo.checked ? 'icon-check' : 'icon-time'"></i>
         </div>
         <div class="tile-content">
             <div class="tile-subtitle"> {{ todo.description }} </div>
